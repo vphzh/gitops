@@ -33,7 +33,7 @@ spec:
         - secretRef:
             name: auth-env-jwks
             optional: false
-        image: docker.io/vzanartcc/auth:debug
+        image: vzanartcc/auth:debug
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
