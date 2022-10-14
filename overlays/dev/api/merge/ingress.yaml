@@ -20,4 +20,4 @@ spec:
   tls:
   - hosts:
     - api.dev.vzanartcc.net
-    secretName: api-vzanartcc-tls
+    secretName: api-vzanartcc-net-tls
