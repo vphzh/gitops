@@ -5,8 +5,3 @@ metadata:
   name: paza
 resources:
 - base
-images:
-- name: /auth
-  newName: adhp/auth
-- name: vzanartcc/auth
-  newName: adhp/auth
