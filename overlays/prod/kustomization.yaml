@@ -10,3 +10,5 @@ images:
 - name: denartcc/api
   newName: adhp/api
   newTag: 6711e3a
+- name: vzanartcc/auth
+  newName: adhp/auth
