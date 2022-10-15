@@ -12,3 +12,4 @@ images:
   newTag: 6711e3a
 - name: vzanartcc/auth
   newName: adhp/auth
+  newTag: f16fa44
