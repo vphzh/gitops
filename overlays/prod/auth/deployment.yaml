@@ -4,7 +4,7 @@ metadata:
   labels:
     app: auth
   name: auth
-  namespace: zan
+  namespace: hcf
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
