@@ -7,7 +7,3 @@ resources:
 - api/deployment.yaml
 - api/service.yaml
 - api/ingress.yaml
-- discord/certificate.yaml
-- discord/deployment.yaml
-- discord/service.yaml
-- discord/ingress.yaml

@@ -6,6 +6,10 @@ resources:
 - auth/deployment.yaml
 - auth/ingress.yaml
 - auth/service.yaml
+- discord/certificate.yaml
+- discord/deployment.yaml
+- discord/service.yaml
+- discord/ingress.yaml
 images:
 - name: denartcc/api
   newName: adhp/api
