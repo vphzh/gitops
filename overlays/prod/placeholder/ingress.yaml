@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: www-ingress
+  labels:
+    app: www
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: www.vhcf.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: www-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - www.vhcf.net
+    secretName: www-vhcf-net-tls

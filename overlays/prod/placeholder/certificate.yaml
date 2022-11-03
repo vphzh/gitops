@@ -1,0 +1,11 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: www-vhcf-net-tls
+spec:
+  dnsNames:
+  - www.vhcf.net
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt
+  secretName: www-vhcf-net-tls
