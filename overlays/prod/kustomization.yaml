@@ -10,6 +10,10 @@ resources:
 - discord/deployment.yaml
 - discord/service.yaml
 - discord/ingress.yaml
+- placeholder/certificate.yaml
+- placeholder/deployment.yaml
+- placeholder/service.yaml
+- placeholder/ingress.yaml
 images:
 - name: denartcc/api
   newName: adhp/api
