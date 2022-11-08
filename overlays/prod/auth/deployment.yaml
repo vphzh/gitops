@@ -33,6 +33,9 @@ spec:
         - secretRef:
             name: auth-env-jwks
             optional: false
+        env:
+        - key: APP_ENV
+          value: production
         image: vzanartcc/auth:debug
         imagePullPolicy: Always
         livenessProbe:
