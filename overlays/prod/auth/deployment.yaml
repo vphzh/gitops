@@ -34,7 +34,7 @@ spec:
             name: auth-env-jwks
             optional: false
         env:
-        - key: APP_ENV
+        - name: APP_ENV
           value: production
         image: vzanartcc/auth:debug
         imagePullPolicy: Always
