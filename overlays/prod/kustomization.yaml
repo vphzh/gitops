@@ -17,7 +17,7 @@ resources:
 images:
 - name: denartcc/api
   newName: adhp/api
-  newTag: main-0374a8d
+  newTag: main-646a649
 - name: vzanartcc/auth
   newName: adhp/auth
   newTag: 72032a6
