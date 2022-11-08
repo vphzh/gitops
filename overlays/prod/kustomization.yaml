@@ -20,4 +20,4 @@ images:
   newTag: main-646a649
 - name: vzanartcc/auth
   newName: adhp/auth
-  newTag: 72032a6
+  newTag: e500ff4
