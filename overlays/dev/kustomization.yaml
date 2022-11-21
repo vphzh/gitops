@@ -9,7 +9,7 @@ images:
   newTag: hcf-dev-165cdc7
 - name: denartcc/api
   newName: adhp/api
-  newTag: dev-29717f6
+  newTag: dev-b3705d5
 patchesStrategicMerge:
 - api/merge/certificate.yaml
 - api/merge/ingress.yaml
