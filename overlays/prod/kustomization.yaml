@@ -15,6 +15,9 @@ resources:
 - placeholder/service.yaml
 - placeholder/ingress.yaml
 images:
+- name: adhp/hcf-frontend
+  newName: adhp/frontend
+  newTag: hcf-main-7860247
 - name: denartcc/api
   newName: adhp/api
   newTag: main-93ac607
