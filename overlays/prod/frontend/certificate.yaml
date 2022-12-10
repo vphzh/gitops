@@ -5,6 +5,7 @@ metadata:
 spec:
   dnsNames:
   - www.vhcf.net
+  - vhcf.net
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt

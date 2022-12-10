@@ -10,10 +10,10 @@ resources:
 - discord/deployment.yaml
 - discord/service.yaml
 - discord/ingress.yaml
-- placeholder/certificate.yaml
-- placeholder/deployment.yaml
-- placeholder/service.yaml
-- placeholder/ingress.yaml
+- frontend/certificate.yaml
+- frontend/deployment.yaml
+- frontend/service.yaml
+- frontend/ingress.yaml
 images:
 - name: adhp/hcf-frontend
   newName: adhp/frontend

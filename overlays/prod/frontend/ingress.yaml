@@ -17,6 +17,16 @@ spec:
               number: 80
         path: /
         pathType: Prefix
+  - host: vhcf.net
+    http:
+      paths:
+      - backend:
+          service:
+            name: www-service
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
   tls:
   - hosts:
     - www.vhcf.net
