@@ -4,6 +4,7 @@ metadata:
   name: base-hcf
 resources:
 - api/certificate.yaml
+- api/configmap.yaml
 - api/deployment.yaml
 - api/service.yaml
 - api/ingress.yaml
