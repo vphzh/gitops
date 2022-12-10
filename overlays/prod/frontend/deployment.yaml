@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: adhp/placeholder:hcf
+        image: adhp/hcf-frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80
