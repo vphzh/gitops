@@ -82,8 +82,8 @@ data:
       client_secret: "{{.OAUTH_CLIENT_SECRET | default "hcf"}}"
       my_base_URL: "{{.OAUTH_MY_BASE_URL | default "https://api.dev.vhcf.net" }}"
     vatusa:
-      facility: "ZAN"
-      api_key: "{{.VATUSA_API_KEY | default "zan"}}"
+      facility: "HCF"
+      api_key: "{{.VATUSA_API_KEY | default "hcf"}}"
 kind: ConfigMap
 metadata:
   name: api-config
