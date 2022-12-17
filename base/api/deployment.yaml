@@ -29,6 +29,8 @@ spec:
         - secretRef:
             name: api-secrets
             optional: false
+        - secretRef:
+            name: discord-webhooks
         command:
         - /bin/bash
         - -c
