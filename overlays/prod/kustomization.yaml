@@ -15,6 +15,7 @@ resources:
 - frontend/service.yaml
 - frontend/ingress.yaml
 - logging/logging.yaml
+- chart-parser/cronjob.yaml
 images:
 - name: adhp/hcf-frontend
   newName: adhp/frontend
