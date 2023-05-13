@@ -1,0 +1,118 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: email-templates
+data:
+  inactive_warning: |
+    Subject: You are about to be inactive
+    BCC:
+    - seniorstaff@vhcf.net
+    Body: |
+      Dear {{.FirstName}} {{.LastName}},
+
+      This is a warning that you have not yet controlled the minimum number of hours during the activity as
+      required by the Honolulu Control Facility Administrative Policy.  Per the policy, controllers must control 
+      no less than 2 hours per 2 month period.
+
+      If, one the first of the month, this requirement is not met, you will be marked inactive and are subject to
+      removal from the roster. If you are unable to meet this requirement, please contact the Senior Staff to request
+      a leave of absense. They may be contacted by emailing seniorstaff@vhcf.net.
+
+      Thanks,
+      {{ range $atm := findRole "atm" }}
+      {{ $staff }}<br>
+      {{ end }}
+      {{ range $datm := findRole "datm" }}
+      {{ $datm }}<br>
+      {{ end }}
+      Honolulu Control Facility, VATUSA
+      https://www.vhcf.net
+  inactive: |
+    Subject: You are inactive
+    BCC:
+    - seniorstaff@vhcf.net
+    Body: |
+      Dear {{.FirstName}} {{.LastName}},
+
+      This is an email notification to inform you that you have not met the minimum activity requirements as set forth
+      by the Honolulu Control Facility Administrative Policy.  Per the policy, controllers must control no less than 2
+      hours per 2 month period. You have been marked inactive on the roster and are subject to removal for Inactivity.
+
+      If you require a Leave of Absense, please contact the Senior Staff as soon as possible. They may be contacted by
+      emailing seniorstaff@vhcf.net.
+
+      Thanks,
+      {{ range $atm := findRole "atm" }}
+      {{ $staff }}<br>
+      {{ end }}
+      {{ range $datm := findRole "datm" }}
+      {{ $datm }}<br>
+      {{ end }}
+      Honolulu Control Facility, VATUSA
+      https://www.vhcf.net
+  visiting_rejected: |
+    Subject: Your visiting controller request has been rejected
+    BCC:
+    - seniorstaff@vhcf.net
+    Body: |
+      Dear {{.FirstName}} {{.LastName}},
+
+      This email is to notify you that your request to join the Honolulu Control Facility Visiting Controller Roster has been
+      rejected. If you feel this was done in error, please reach out to the Honolulu Control Facility Senior Staff by emailing
+      seniorstaff@vhcf.net.
+
+      The general reason applications are rejected are due to you not meeting the minimum requirements as listed on the
+      website.
+
+      Regards,
+      {{ range $atm := findRole "atm" }}
+      {{ $staff }}
+      {{ end }}
+      {{ range $datm := findRole "datm" }}
+      {{ $datm }}
+      {{ end }}
+      Honolulu Control Facility, VATUSA
+      https://www.vhcf.net
+  visiting_added: |
+    Subject: You have been added to the visiting controller roster
+    BCC:
+    - seniorstaff@vhcf.net
+    Body: |
+      Dear {{.FirstName}} {{.LastName}},
+
+      This email is to notify you that you have been added to the Honolulu Control Facility Visiting Controller Roster.
+      We are excited to have you join us and look forward to seeing you on the scopes.
+
+      To begin, please join the Honolulu Control Facility Discord if you have not already. You may join it and link your account through
+      our Discord Portal, accessible at https://discord.vhcf.net.
+
+      Next, please review the Honolulu Control Facility Policies by visiting our website at https://www.vhcf.net.
+
+      We look forward to controlling with you and hope to see you soon!
+      {{ range $atm := findRole "atm" }}
+      {{ $staff }}
+      {{ end }}
+      {{ range $datm := findRole "datm" }}
+      {{ $datm }}
+      {{ end }}
+      Honolulu Control Facility, VATUSA
+      https://www.vhcf.net
+  visiting_removed: |
+    Subject: You have been removed from the visiting controller roster
+    BCC:
+    - seniorstaff@vhcf.net
+    Body: |
+      Dear {{.FirstName}} {{.LastName}}
+
+      This is notification that you have been removed from the Honolulu Control Facility Visiting Controller Roster. If you feel this
+      was done in error, please reach out to the Honolulu Control Facility Senior Staff by emailing seniorstaff@vhcf.net.
+
+      Regards,
+      {{ range $atm := findRole "atm" }}
+      {{ $staff }}
+      {{ end }}
+      {{ range $datm := findRole "datm" }}
+      {{ $datm }}
+      {{ end }}
+      Honolulu Control Facility, VATUSA
+      https://www.vhcf.net

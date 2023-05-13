@@ -30,6 +30,7 @@ data:
       user: {{.EMAIL_USER | default "root"}}
       password: {{.EMAIL_PASSWORD | default "root"}}
       from: {{.EMAIL_FROM | default "root@localhost"}}
+      template_dir: "/app/templates"
     facility:
       activity:
         enabled: false
@@ -43,6 +44,9 @@ data:
       visiting:
         discord_webhook_name: "visitor"
         rating_min: S1
+        send_welcome: false
+        send_removal: false
+        send_rejected: false
       stats:
         enabled: true
         discord_broadcast: true

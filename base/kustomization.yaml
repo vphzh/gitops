@@ -5,6 +5,7 @@ metadata:
 resources:
 - api/certificate.yaml
 - api/configmap.yaml
+- api/email-templates.yaml
 - api/deployment.yaml
 - api/service.yaml
 - api/ingress.yaml
