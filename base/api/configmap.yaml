@@ -62,6 +62,9 @@ data:
         - MKK
         - NGF
         - OGG
+        - GUM
+        - UAM
+        - SPN
     session:
       cookie:
         name: "{{.SESSION_NAME | default "hcf_session"}}"
