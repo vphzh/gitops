@@ -22,7 +22,7 @@ images:
   newTag: hcf-v1.6.1684093677.22-650a46b
 - name: denartcc/api
   newName: adhp/api
-  newTag: main-81483e5
+  newTag: main-5116208
 - name: vzanartcc/auth
   newName: adhp/auth
   newTag: df0fe4b
