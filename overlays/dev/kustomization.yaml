@@ -9,7 +9,7 @@ images:
   newTag: hcf-main-f2486c6
 - name: denartcc/api
   newName: adhp/api
-  newTag: dev-358600b
+  newTag: dev-c86cd78
 patchesStrategicMerge:
 - api/merge/certificate.yaml
 - api/merge/ingress.yaml
