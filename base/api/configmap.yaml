@@ -65,6 +65,7 @@ data:
         - GUM
         - UAM
         - SPN
+        - BSF
     session:
       cookie:
         name: "{{.SESSION_NAME | default "hcf_session"}}"
