@@ -31,6 +31,8 @@ data:
       password: {{.EMAIL_PASSWORD | default "root"}}
       from: {{.EMAIL_FROM | default "root@localhost"}}
       template_dir: "/app/templates"
+    features:
+      online_controllers: false
     facility:
       activity:
         enabled: false
