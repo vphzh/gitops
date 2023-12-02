@@ -19,7 +19,7 @@ resources:
 images:
 - name: adhp/hcf-frontend
   newName: adhp/frontend
-  newTag: hcf-v1.8.1701133103.45-6552ca9
+  newTag: hcf-v1.8.1701489232.46-f0bf867
 - name: denartcc/api
   newName: adhp/api
   newTag: main-0d111b1
