@@ -61,8 +61,7 @@ data:
       rejected. If you feel this was done in error, please reach out to the Honolulu Control Facility Senior Staff by emailing
       seniorstaff@vhcf.net.
 
-      The general reason applications are rejected are due to you not meeting the minimum requirements as listed on the
-      website.
+      <p>The reason is: {{.Reason}}</p>
 
       Regards,
       {{ range $atm := findRole "atm" }}
