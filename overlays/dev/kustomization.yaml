@@ -6,7 +6,7 @@ resources:
 images:
 - name: adhp/hcf-frontend
   newName: adhp/frontend
-  newTag: hcf-main-8f06b7b
+  newTag: hcf-main-b759786
 - name: denartcc/api
   newName: adhp/api
   newTag: dev-394a98c
